@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <section id="gallery">
+        <% gallery.forEach(element => { %>
+        <figure>
+            <img src="<%= element.url %> " alt="">
+            <figcaption>
+                <h3><%= element.author %></h3>
+                <h3><%= element.rating %></h3>
+                <h3><%= element.createdAt %></h3>
+            </figcaption>
+        </figure>
+        <% }) %>
+    </section>
+</body>
+
+</html>
